@@ -17,7 +17,7 @@ We converted the text into the flag format.
 ## Arte-Miss?
 The attechment in this challenge was an image file.
 Dowloaded the image onto my laptop so i could search for ```OASIS``` as we knew that flags started with OASIS.
-I tried doing this with the grep command initally but that didnt help me out much.
+We tried doing this with the grep command initally but that didnt help us out much.
 We then looked for alternate codes we could run to find the information.
 ``` strings mirage.jpg | grep "OASIS" ```
 Finally we found the flag
