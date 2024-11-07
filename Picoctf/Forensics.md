@@ -19,3 +19,11 @@ So i combined the text in the picture and the text in the pdf to get the flag.
 ```
 picoCTF{f1u3n7_1n_pn9_&_pdf_2a6a1ea8}
 ```
+## CanYouSee
+My first idea was to do what i had done in the oasisCTF.
+But that didnt get me anywhere.
+```
+strings ukn_reality.jpg | grep picoCTF{
+```
+
+
