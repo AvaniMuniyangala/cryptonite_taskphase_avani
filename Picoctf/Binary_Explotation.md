@@ -6,19 +6,20 @@ It would exit regardless of what input i gave. The name of the challenge was buf
 Turns out i was right.
 I did look at the write up of this online to check the what the source and program were.
 ```
-(base) Vijayakrishnas-MacBook-Pro:~ avani$ nc saturn.picoctf.net 60023nc saturn.picoctf.net 60023
-nc: port range not valid
-(base) Vijayakrishnas-MacBook-Pro:~ avani$ nc saturn.picoctf.net 60023
-Input: a 
+springonioin-picoctf@webshell:~$ nc saturn.picoctf.net 57620
+Input: a
 The program will exit now
-(base) Vijayakrishnas-MacBook-Pro:~ avani$ nc saturn.picoctf.net 60023
+ 
+springonioin-picoctf@webshell:~$ nc saturn.picoctf.net 57620
 Input: 3
 The program will exit now
-(base) Vijayakrishnas-MacBook-Pro:~ avani$ nc saturn.picoctf.net 60023
-Input: 1kdohuygf73fb930761
+
+springonioin-picoctf@webshell:~$ nc saturn.picoctf.net 57620
+Input: w7ieyhdw bhjlygfp72
 The program will exit now
-(base) Vijayakrishnas-MacBook-Pro:~ avani$ nc saturn.picoctf.net 60023
-Input: 1983712ehniqubdqtwdbq807631dfqeg01 
+
+springonioin-picoctf@webshell:~$ nc saturn.picoctf.net 57620
+Input: 249872-398741982hdkeibfwyeugdkq8iw783yr3wuifbq
 picoCTF{ov3rfl0ws_ar3nt_that_bad_ef01832d}
 ```
 ## format string 0
