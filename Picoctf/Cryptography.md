@@ -58,6 +58,14 @@ The flag
 ``` picoCTF{e_sh0u1d_b3_lArg3r_a166c1e3}' ```
 which was wrong.
 I dont know how to fix it.
+## morse-code 
+Put the downloaded audio into an online morse to text converter.
+Got this ```WH47 H47H 90D W20U9H7```
+Converting this into the flag: ```picoCTF{wh47_h47h_90d_w20u9h7}```
 
+## credstuff
+Upon downloading the usernames and passwords files i went through both of them and found ```cvpbPGS{P7e1S_54I35_71Z3}``` in passwords.txt.
+Putting this in an online caesar cipher decoder. I varied the parameters until i found the flag (shift 13)
+flag : ```picoCTF{C7r1F_54V35_71M3}```
 
 
