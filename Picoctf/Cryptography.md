@@ -52,7 +52,7 @@ bytes = long_to_bytes(data)
 print(bytes)
 ```
 The flag 
-``` picoCTF{e_sh0u1d_b3_lArg3r_a166c1e3}' ```
+``` picoCTF{e_sh0u1d_b3_lArg3r_a166c1e3} ```
 which was wrong.
 I dont know how to fix it.
 ## morse-code 
