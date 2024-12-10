@@ -50,7 +50,8 @@ picoCTF{trust_but_verify_8eee7195}
 - hint 2 : Try CyberChef's 'From Hex' function
 <img width="1280" alt="Screenshot 2024-12-10 at 5 25 50 PM" src="https://github.com/user-attachments/assets/82877508-1b1b-4914-b1b5-b7fdab326371">
 <br>
-flag: ```picoCTF{45c11_n0_qu35710n5_1ll_t311_y3_n0_l135_445d4180}```
+
+```picoCTF{45c11_n0_qu35710n5_1ll_t311_y3_n0_l135_445d4180}```
 
 ## useless
 Once i connected it was a simple revision of linux 
