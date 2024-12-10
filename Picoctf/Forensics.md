@@ -19,11 +19,9 @@ So i combined the text in the picture and the text in the pdf to get the flag.
 ```
 picoCTF{f1u3n7_1n_pn9_&_pdf_2a6a1ea8}
 ```
-## CanYouSee
-My first idea was to do what i had done in the oasisCTF.
-But that didnt get me anywhere.
-```
-strings ukn_reality.jpg | grep picoCTF{
-```
+## m00nwalk 
+Okay so hint 1 "How did pictures from the moon landing get sent back to Earth?"
+That would be sstv.
+What is the CMU mascot?, that might help select a RX option
 
 
