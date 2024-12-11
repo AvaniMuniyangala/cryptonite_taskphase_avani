@@ -66,3 +66,83 @@ So in order for w0 to be zero.
 ```w0=27-X(sp+28)``` X must be 27.
 27 in hexadecimal 32 bit is ```0000001b```
 Thus the flag is ```picoCTF{0000001b}```
+
+## vault-door-training
+LEVEL: EASY <br>
+The challenge introduces us to java code.<br>
+We are presented with this program 
+```
+import java.util.*;
+
+class VaultDoorTraining {
+    public static void main(String args[]) {
+        VaultDoorTraining vaultDoor = new VaultDoorTraining();
+        Scanner scanner = new Scanner(System.in); 
+        System.out.print("Enter vault password: ");
+        String userInput = scanner.next();
+	String input = userInput.substring("picoCTF{".length(),userInput.length()-1);
+	if (vaultDoor.checkPassword(input)) {
+	    System.out.println("Access granted.");
+	} else {
+	    System.out.println("Access denied!");
+	}
+   }
+
+    // The password is below. Is it safe to put the password in the source code?
+    // What if somebody stole our source code? Then they would know what our
+    // password is. Hmm... I will think of some ways to improve the security
+    // on the other doors.
+    //
+    // -Minion #9567
+    public boolean checkPassword(String password) {
+        return password.equals("w4rm1ng_Up_w1tH_jAv4_eec0716b713");
+    }
+}
+```
+The flag was simply ```w4rm1ng_Up_w1tH_jAv4_eec0716b713``` wrapped in picoCTF{}. <br>
+```picoCTF{w4rm1ng_Up_w1tH_jAv4_eec0716b713}```
+
+## Vault door 1 
+LEVEL: MEDIUM 
+The challnege was straightforward. Just took some extra effort.
+```
+ password.length() == 32 &&
+               password.charAt(0)  == 'd' &&
+               password.charAt(29) == '3' &&
+               password.charAt(4)  == 'r' &&
+               password.charAt(2)  == '5' &&
+               password.charAt(23) == 'r' &&
+               password.charAt(3)  == 'c' &&
+               password.charAt(17) == '4' &&
+               password.charAt(1)  == '3' &&
+               password.charAt(7)  == 'b' &&
+               password.charAt(10) == '_' &&
+               password.charAt(5)  == '4' &&
+               password.charAt(9)  == '3' &&
+               password.charAt(11) == 't' &&
+               password.charAt(15) == 'c' &&
+               password.charAt(8)  == 'l' &&
+               password.charAt(12) == 'H' &&
+               password.charAt(20) == 'c' &&
+               password.charAt(14) == '_' &&
+               password.charAt(6)  == 'm' &&
+               password.charAt(24) == '5' &&
+               password.charAt(18) == 'r' &&
+               password.charAt(13) == '3' &&
+               password.charAt(19) == '4' &&
+               password.charAt(21) == 'T' &&
+               password.charAt(16) == 'H' &&
+               password.charAt(27) == 'f' &&
+               password.charAt(30) == 'b' &&
+               password.charAt(25) == '_' &&
+               password.charAt(22) == '3' &&
+               password.charAt(28) == '6' &&
+               password.charAt(26) == 'f' &&
+               password.charAt(31) == '0';
+```
+All we had to do was place the characters at their index postions.
+We arrive at this <br>
+```
+d35cr4mbl3_tH3_cH4r4cT3r5_ff63b0
+```
+The flag : ```picoCTF{d35cr4mbl3_tH3_cH4r4cT3r5_ff63b0}```
