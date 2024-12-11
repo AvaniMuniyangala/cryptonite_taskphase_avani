@@ -19,9 +19,9 @@ So i combined the text in the picture and the text in the pdf to get the flag.
 ```
 picoCTF{f1u3n7_1n_pn9_&_pdf_2a6a1ea8}
 ```
-## m00nwalk 
-Okay so hint 1 "How did pictures from the moon landing get sent back to Earth?"
-That would be sstv.
-What is the CMU mascot?, that might help select a RX option
+## tunn3l v1s10n
+I put the downloaded file into ```hexed.it ``` and then went through [List of file signatures](https://en.wikipedia.org/wiki/List_of_file_signatures) and found out it was a BMP image.
+<br><br>
+<img width="773" alt="Screenshot 2024-12-11 at 5 02 48 PM" src="https://github.com/user-attachments/assets/92cdf7c8-6e10-4de0-8f1e-a174f782fe3b">
 
 
