@@ -160,3 +160,8 @@ I got the flag after downloading the file.
 I found the flag skimming while skimming through the file.
 However still used grep command to find the flag.
 FLAG: ```picoCTF{grep_is_good_to_find_things_dba08a45}```
+
+## Bases 
+Well the first thing that comes to mind is Base64.
+FLAG: ```picoCTF{l3arn_th3_r0p35}```
+
