@@ -65,4 +65,7 @@ Upon downloading the usernames and passwords files i went through both of them a
 Putting this in an online caesar cipher decoder. I varied the parameters until i found the flag (shift 13)
 flag : ```picoCTF{C7r1F_54V35_71M3}```
 
+## Mod 26
+Put the encrypted text in a caeser decoder and just as the description specified RO13 gave us the flag;
+FLAG: ```picoCTF{next_time_I'll_try_2_rounds_of_rot13_hWqFsgzu}```
 
