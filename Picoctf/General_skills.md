@@ -120,4 +120,33 @@ Authors
 
      picoCTF{us3l3ss_ch4ll3ng3_3xpl0it3d_5136}
 ```
-
+## Magikarp Ground Mission
+Challenge requires us to know cd cat and ls commands on bash.
+```
+ctf-player@pico-chall$ ls
+1of3.flag.txt  instructions-to-2of3.txt
+ctf-player@pico-chall$ cat instructions-to-2of3.txt
+Next, go to the root of all things, more succinctly `/`
+ctf-player@pico-chall$ cat 1of3.flag.txt
+picoCTF{xxsh_
+ctf-player@pico-chall$ cd /
+ctf-player@pico-chall$ ls 
+2of3.flag.txt  dev   instructions-to-3of3.txt  media  proc  sbin  tmp
+bin            etc   lib                       mnt    root  srv   usr
+boot           home  lib64                     opt    run   sys   var
+ctf-player@pico-chall$ cat 2of3.flag.txt
+0ut_0f_\/\/4t3r_
+ctf-player@pico-chall$ cat instructions-to-3of3.txt
+Lastly, ctf-player, go home... more succinctly `~`
+ctf-player@pico-chall$ cd ~
+ctf-player@pico-chall$ ls
+3of3.flag.txt  drop-in
+ctf-player@pico-chall$ cat 3of3.flag.txt
+1118a9a4}
+ctf-player@pico-chall$ cat drop-in
+cat: drop-in: Is a directory
+ctf-player@pico-chall$ cd drop-in
+ctf-player@pico-chall$ ls
+1of3.flag.txt  instructions-to-2of3.txt
+```
+FLAG: ```picoCTF{xxsh_0ut_0f_\/\/4t3r_1118a9a4}```
