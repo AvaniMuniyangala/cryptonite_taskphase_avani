@@ -165,3 +165,7 @@ FLAG: ```picoCTF{grep_is_good_to_find_things_dba08a45}```
 Well the first thing that comes to mind is Base64.
 FLAG: ```picoCTF{l3arn_th3_r0p35}```
 
+## Warmed up 
+0x3d in base 10 is 61
+FLAG: ```picoCTF{61}```
+
