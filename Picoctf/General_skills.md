@@ -155,3 +155,8 @@ FLAG: ```picoCTF{xxsh_0ut_0f_\/\/4t3r_1118a9a4}```
 Fastest solve ever.
 I got the flag after downloading the file.
 ```picoCTF{s4n1ty_v3r1f13d_1a94e0f9}```
+
+## First Grep
+I found the flag skimming while skimming through the file.
+However still used grep command to find the flag.
+FLAG: ```picoCTF{grep_is_good_to_find_things_dba08a45}```
